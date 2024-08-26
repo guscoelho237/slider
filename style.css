@@ -1,0 +1,205 @@
+body {
+    background-color: black;
+  }
+
+.Titulo {
+    color: white;
+}
+
+.Titulo2 {
+    color: #ffffff;
+}
+
+.texto {
+    color: white;
+}
+
+/* Estiliza o contêiner do menu de navegação */
+nav {
+    background-color: #000000;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao contêiner do menu */
+}
+
+/* Remove a marcação da lista e centraliza os itens */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estiliza cada item da lista */
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Necessário para posicionar o dropdown */
+}
+
+/* Estiliza os links dentro do menu */
+nav ul li a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse sobre o link */
+nav ul li a:hover {
+    color: #751111e6; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom */
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Sombra mais forte */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra mais forte no texto */
+}
+
+/* Estilo dos cabeçalhos */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilo do menu suspenso (dropdown) */
+nav ul li .dropdown-content {
+    display: none; /* Oculta o conteúdo do dropdown */
+    position: absolute;
+    background-color: #000000;
+    box-shadow: 0 8px 16px rgb(146, 18, 18); /* Sombra ao redor do dropdown */
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+
+/* Estiliza os itens do dropdown */
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+/* Estiliza os links dentro do dropdown */
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+    color: #ffffff; /* Cor dos links do dropdown */
+    text-decoration: none;
+    display: block;
+}
+
+/* Efeito ao passar o mouse sobre os links do dropdown */
+nav ul li .dropdown-content li a:hover {
+    background-color: #4b0909; /* Cor de fundo ao passar o mouse */
+}
+
+/* Mostra o dropdown ao passar o mouse sobre o item do menu */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+/*Conteudo site - slider*/
+/*estilização do container do slider*/
+.slider {
+    width: 700%; 
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    width: 200%;
+    animation: slideAnimation 20s infinite;
+
+}
+.slide {
+width: 50%;
+flex-shrink: 0;
+}
+
+@keyframes slideAnimation {
+    0% {transform: translateX(0);}
+    20% {transform: translateX(-50%);}
+    40% {transform: translateX(-100%);}
+    60% {transform: translateX(-150%);}
+    80% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+/*footer*/
+/*Estilo geral do footer*/
+footer{
+    background-color: #000000;
+    color:white;
+    padding: 40px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+ 
+.footer-section{
+    flex-basis: 23%; /*Faz com que as seções ocupem 23% da largura, com espaço para margens*/
+    margin-bottom: 20px;
+}
+ 
+.footer-section h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+ 
+.footer-section p, .footer-section ul{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+ 
+.footer-section ul{
+    list-style-type: none;
+}
+ 
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+ 
+.footer-section ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+.footer-section ul li a:hover{
+    color: #691c1c;
+}
+ 
+.social-links a{
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+.social-links a:hover{
+    color: #691c1c;
+}
+ 
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff;
+    font-size: 14px;
+}
+ 
+.footer-bottom p{
+    margin: 0;
+}
